@@ -27,7 +27,7 @@ Text HLabel 1450 4600 0    75   Input ~ 0
 RMII_MDC
 Text HLabel 1450 4500 0    75   BiDi ~ 0
 RMII_MDIO
-Text HLabel 5500 2000 0    75   Output ~ 0
+Text HLabel 5850 2000 0    75   Output ~ 0
 RMII_REF_CLK
 Text HLabel 5475 7000 0    75   UnSpc ~ 0
 GND
@@ -166,17 +166,6 @@ Wire Wire Line
 	2250 5700 2250 3600
 $Comp
 L Device:R_Small R?
-U 1 1 61C0B8A9
-P 1900 1050
-F 0 "R?" V 1704 1050 50  0000 C CNN
-F 1 "R_Small" V 1795 1050 50  0000 C CNN
-F 2 "" H 1900 1050 50  0001 C CNN
-F 3 "~" H 1900 1050 50  0001 C CNN
-	1    1900 1050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
 U 1 1 61C0BB62
 P 2000 2425
 F 0 "R?" H 1941 2379 50  0000 R CNN
@@ -222,24 +211,24 @@ $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 61C0CA6B
-P 6250 1650
-F 0 "R?" H 6191 1604 50  0000 R CNN
-F 1 "R_Small" H 6191 1695 50  0000 R CNN
-F 2 "" H 6250 1650 50  0001 C CNN
-F 3 "~" H 6250 1650 50  0001 C CNN
-	1    6250 1650
+P 6250 1800
+F 0 "R?" H 6191 1754 50  0000 R CNN
+F 1 "R_Small" H 6191 1845 50  0000 R CNN
+F 2 "" H 6250 1800 50  0001 C CNN
+F 3 "~" H 6250 1800 50  0001 C CNN
+	1    6250 1800
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 61C0CE21
-P 7000 4200
-F 0 "R?" V 6804 4200 50  0000 C CNN
-F 1 "R_Small" V 6895 4200 50  0000 C CNN
-F 2 "" H 7000 4200 50  0001 C CNN
-F 3 "~" H 7000 4200 50  0001 C CNN
-	1    7000 4200
-	0    1    1    0   
+P 6300 4400
+F 0 "R?" V 6104 4400 50  0000 C CNN
+F 1 "R_Small" V 6195 4400 50  0000 C CNN
+F 2 "" H 6300 4400 50  0001 C CNN
+F 3 "~" H 6300 4400 50  0001 C CNN
+	1    6300 4400
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R?
@@ -299,56 +288,23 @@ $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 61C107E8
-P 10300 5700
-F 0 "R?" H 10241 5654 50  0000 R CNN
-F 1 "R_Small" H 10241 5745 50  0000 R CNN
-F 2 "" H 10300 5700 50  0001 C CNN
-F 3 "~" H 10300 5700 50  0001 C CNN
-	1    10300 5700
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 61C10DE8
-P 10100 5800
-F 0 "#PWR?" H 10100 5550 50  0001 C CNN
-F 1 "Earth" H 10100 5650 50  0001 C CNN
-F 2 "" H 10100 5800 50  0001 C CNN
-F 3 "~" H 10100 5800 50  0001 C CNN
-	1    10100 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 61C11E14
-P 9800 5800
-F 0 "#PWR?" H 9800 5550 50  0001 C CNN
-F 1 "Earth" H 9800 5650 50  0001 C CNN
-F 2 "" H 9800 5800 50  0001 C CNN
-F 3 "~" H 9800 5800 50  0001 C CNN
-	1    9800 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 61C1208D
-P 9500 5800
-F 0 "#PWR?" H 9500 5550 50  0001 C CNN
-F 1 "Earth" H 9500 5650 50  0001 C CNN
-F 2 "" H 9500 5800 50  0001 C CNN
-F 3 "~" H 9500 5800 50  0001 C CNN
-	1    9500 5800
-	1    0    0    -1  
+P 6050 2000
+F 0 "R?" H 5991 1954 50  0000 R CNN
+F 1 "R_Small" H 5991 2045 50  0000 R CNN
+F 2 "" H 6050 2000 50  0001 C CNN
+F 3 "~" H 6050 2000 50  0001 C CNN
+	1    6050 2000
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:Earth #PWR?
 U 1 1 61C1233B
-P 9200 5800
-F 0 "#PWR?" H 9200 5550 50  0001 C CNN
-F 1 "Earth" H 9200 5650 50  0001 C CNN
-F 2 "" H 9200 5800 50  0001 C CNN
-F 3 "~" H 9200 5800 50  0001 C CNN
-	1    9200 5800
+P 9050 4925
+F 0 "#PWR?" H 9050 4675 50  0001 C CNN
+F 1 "Earth" H 9050 4775 50  0001 C CNN
+F 2 "" H 9050 4925 50  0001 C CNN
+F 3 "~" H 9050 4925 50  0001 C CNN
+	1    9050 4925
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -465,21 +421,6 @@ Wire Wire Line
 	6100 3700 8150 3700
 Wire Wire Line
 	6100 3800 7550 3800
-$Comp
-L power:Earth #PWR?
-U 1 1 61C97C7D
-P 7300 4475
-F 0 "#PWR?" H 7300 4225 50  0001 C CNN
-F 1 "Earth" H 7300 4325 50  0001 C CNN
-F 2 "" H 7300 4475 50  0001 C CNN
-F 3 "~" H 7300 4475 50  0001 C CNN
-	1    7300 4475
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7100 4200 7300 4200
-Wire Wire Line
-	7300 4200 7300 4475
 Connection ~ 8250 2175
 Wire Wire Line
 	8250 2175 8250 2100
@@ -618,12 +559,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 61D32C24
-P 6250 1325
-F 0 "#PWR?" H 6250 1175 50  0001 C CNN
-F 1 "+3V3" H 6265 1498 50  0000 C CNN
-F 2 "" H 6250 1325 50  0001 C CNN
-F 3 "" H 6250 1325 50  0001 C CNN
-	1    6250 1325
+P 6250 1600
+F 0 "#PWR?" H 6250 1450 50  0001 C CNN
+F 1 "+3V3" H 6265 1773 50  0000 C CNN
+F 2 "" H 6250 1600 50  0001 C CNN
+F 3 "" H 6250 1600 50  0001 C CNN
+	1    6250 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -634,8 +575,6 @@ Wire Wire Line
 	2500 2100 2500 2325
 Wire Wire Line
 	2750 2100 2750 2325
-Wire Wire Line
-	6250 1325 6250 1550
 Wire Wire Line
 	1825 3300 2000 3300
 Wire Wire Line
@@ -672,8 +611,6 @@ Wire Wire Line
 	6100 4900 6200 4900
 Wire Wire Line
 	6200 4900 6200 6500
-Wire Wire Line
-	6200 7000 5475 7000
 $Comp
 L Device:C_Small C?
 U 1 1 61D8F3A5
@@ -825,9 +762,6 @@ Connection ~ 3750 6500
 Wire Wire Line
 	4250 6500 4750 6500
 Connection ~ 4250 6500
-Connection ~ 6200 6500
-Wire Wire Line
-	6200 6500 6200 7000
 Wire Wire Line
 	5750 6200 5750 6500
 Connection ~ 5750 6500
@@ -866,8 +800,6 @@ Wire Wire Line
 	7550 4075 7750 4075
 Connection ~ 8150 4075
 Wire Wire Line
-	6100 4200 6900 4200
-Wire Wire Line
 	8250 2275 8250 5900
 Wire Wire Line
 	8250 5900 5750 5900
@@ -895,9 +827,7 @@ Connection ~ 7250 2800
 Wire Wire Line
 	6100 2800 7250 2800
 Wire Wire Line
-	5500 2000 6250 2000
-Wire Wire Line
-	6250 2000 6250 1750
+	6250 2000 6250 1900
 Wire Wire Line
 	6250 2000 6250 4000
 Connection ~ 6250 2000
@@ -952,4 +882,41 @@ Wire Wire Line
 	1450 4500 2750 4500
 Wire Wire Line
 	2250 3600 3300 3600
+Wire Wire Line
+	9150 4700 9050 4700
+Wire Wire Line
+	9050 4700 9050 4925
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61CE0856
+P 8250 1800
+F 0 "#PWR?" H 8250 1650 50  0001 C CNN
+F 1 "+3V3" H 8265 1973 50  0000 C CNN
+F 2 "" H 8250 1800 50  0001 C CNN
+F 3 "" H 8250 1800 50  0001 C CNN
+	1    8250 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 1800 8250 1900
+Wire Wire Line
+	6200 6500 6300 6500
+Wire Wire Line
+	6300 6500 6300 4500
+Wire Wire Line
+	6300 4200 6100 4200
+Connection ~ 6200 6500
+Wire Wire Line
+	6300 4300 6300 4200
+Wire Wire Line
+	6300 6500 6300 7000
+Wire Wire Line
+	5475 7000 6300 7000
+Connection ~ 6300 6500
+Wire Wire Line
+	6150 2000 6250 2000
+Wire Wire Line
+	6250 1600 6250 1700
+Wire Wire Line
+	5950 2000 5850 2000
 $EndSCHEMATC
