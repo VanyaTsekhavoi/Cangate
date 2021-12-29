@@ -74,71 +74,6 @@ F 30 "0°C" H 3200 6000 50  0001 L CNN "temperature range low"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal_Small Y?
-U 1 1 61BFFA80
-P 7850 4075
-F 0 "Y?" H 7850 4300 50  0000 C CNN
-F 1 "Crystal_Small" H 7850 4209 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm_HandSoldering" H 7850 4075 50  0001 C CNN
-F 3 "~" H 7850 4075 50  0001 C CNN
-	1    7850 4075
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 4075 8150 4075
-$Comp
-L Device:C_Small C?
-U 1 1 61C02B58
-P 7550 4325
-F 0 "C?" H 7642 4371 50  0000 L CNN
-F 1 "C_Small" H 7642 4280 50  0000 L CNN
-F 2 "" H 7550 4325 50  0001 C CNN
-F 3 "~" H 7550 4325 50  0001 C CNN
-	1    7550 4325
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 61C02FC7
-P 8150 4325
-F 0 "C?" H 8242 4371 50  0000 L CNN
-F 1 "C_Small" H 8242 4280 50  0000 L CNN
-F 2 "" H 8150 4325 50  0001 C CNN
-F 3 "~" H 8150 4325 50  0001 C CNN
-	1    8150 4325
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 61C043D9
-P 7550 4525
-F 0 "#PWR?" H 7550 4275 50  0001 C CNN
-F 1 "Earth" H 7550 4375 50  0001 C CNN
-F 2 "" H 7550 4525 50  0001 C CNN
-F 3 "~" H 7550 4525 50  0001 C CNN
-	1    7550 4525
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 61C04801
-P 8150 4525
-F 0 "#PWR?" H 8150 4275 50  0001 C CNN
-F 1 "Earth" H 8150 4375 50  0001 C CNN
-F 2 "" H 8150 4525 50  0001 C CNN
-F 3 "~" H 8150 4525 50  0001 C CNN
-	1    8150 4525
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 4225 7550 4075
-Wire Wire Line
-	8150 4225 8150 4075
-Wire Wire Line
-	8150 4425 8150 4525
-Wire Wire Line
-	7550 4525 7550 4425
-$Comp
 L power:Earth #PWR?
 U 1 1 61C05640
 P 2250 6050
@@ -330,13 +265,9 @@ Wire Wire Line
 	9950 4700 10100 4700
 Wire Wire Line
 	10100 4700 10100 5050
-Wire Wire Line
-	6100 3500 10100 3500
 Connection ~ 10100 4700
 Wire Wire Line
 	10100 3500 10100 4700
-Wire Wire Line
-	6100 3400 10000 3400
 Wire Wire Line
 	10000 3400 10000 4000
 Wire Wire Line
@@ -417,10 +348,6 @@ Wire Wire Line
 Wire Wire Line
 	8750 4400 8750 4300
 Connection ~ 8750 4300
-Wire Wire Line
-	6100 3700 8150 3700
-Wire Wire Line
-	6100 3800 7550 3800
 Connection ~ 8250 2175
 Wire Wire Line
 	8250 2175 8250 2100
@@ -792,14 +719,6 @@ Wire Wire Line
 Wire Wire Line
 	9600 2275 8250 2275
 Wire Wire Line
-	7550 3800 7550 4075
-Connection ~ 7550 4075
-Wire Wire Line
-	8150 3700 8150 4075
-Wire Wire Line
-	7550 4075 7750 4075
-Connection ~ 8150 4075
-Wire Wire Line
 	8250 2275 8250 5900
 Wire Wire Line
 	8250 5900 5750 5900
@@ -835,13 +754,9 @@ Wire Wire Line
 	6250 4000 6100 4000
 Connection ~ 6500 3200
 Wire Wire Line
-	6500 3200 8950 3200
-Wire Wire Line
 	6500 2175 6750 2175
 Wire Wire Line
 	6750 2450 6750 2175
-Wire Wire Line
-	6750 2650 6750 3100
 $Comp
 L Device:R_Small R?
 U 1 1 61C0EC9E
@@ -919,4 +834,89 @@ Wire Wire Line
 	6250 1600 6250 1700
 Wire Wire Line
 	5950 2000 5850 2000
+Wire Wire Line
+	6750 2650 6750 3100
+Wire Wire Line
+	6100 3500 10100 3500
+Wire Wire Line
+	6100 3400 10000 3400
+Wire Wire Line
+	6500 3200 8950 3200
+$Comp
+L Device:Crystal_Small Y?
+U 1 1 61BFFA80
+P 7025 4075
+F 0 "Y?" H 7025 4300 50  0000 C CNN
+F 1 "Crystal_Small" H 7025 4209 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm_HandSoldering" H 7025 4075 50  0001 C CNN
+F 3 "~" H 7025 4075 50  0001 C CNN
+	1    7025 4075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7125 4075 7325 4075
+$Comp
+L Device:C_Small C?
+U 1 1 61C02B58
+P 6725 4325
+F 0 "C?" H 6817 4371 50  0000 L CNN
+F 1 "C_Small" H 6817 4280 50  0000 L CNN
+F 2 "" H 6725 4325 50  0001 C CNN
+F 3 "~" H 6725 4325 50  0001 C CNN
+	1    6725 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61C02FC7
+P 7325 4325
+F 0 "C?" H 7417 4371 50  0000 L CNN
+F 1 "C_Small" H 7417 4280 50  0000 L CNN
+F 2 "" H 7325 4325 50  0001 C CNN
+F 3 "~" H 7325 4325 50  0001 C CNN
+	1    7325 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 61C043D9
+P 6725 4525
+F 0 "#PWR?" H 6725 4275 50  0001 C CNN
+F 1 "Earth" H 6725 4375 50  0001 C CNN
+F 2 "" H 6725 4525 50  0001 C CNN
+F 3 "~" H 6725 4525 50  0001 C CNN
+	1    6725 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 61C04801
+P 7325 4525
+F 0 "#PWR?" H 7325 4275 50  0001 C CNN
+F 1 "Earth" H 7325 4375 50  0001 C CNN
+F 2 "" H 7325 4525 50  0001 C CNN
+F 3 "~" H 7325 4525 50  0001 C CNN
+	1    7325 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6725 4225 6725 4075
+Wire Wire Line
+	7325 4225 7325 4075
+Wire Wire Line
+	7325 4425 7325 4525
+Wire Wire Line
+	6725 4525 6725 4425
+Wire Wire Line
+	6725 3800 6725 4075
+Connection ~ 6725 4075
+Wire Wire Line
+	7325 3700 7325 4075
+Wire Wire Line
+	6725 4075 6925 4075
+Connection ~ 7325 4075
+Wire Wire Line
+	6100 3700 7325 3700
+Wire Wire Line
+	6100 3800 6725 3800
 $EndSCHEMATC
