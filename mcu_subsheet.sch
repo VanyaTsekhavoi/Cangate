@@ -35,15 +35,15 @@ Text HLabel 8500 5300 0    75   UnSpc ~ 0
 GND
 Text HLabel 4300 2400 0    75   UnSpc ~ 0
 NRST
-Text HLabel 1700 3000 0    75   BiDi ~ 0
+Text HLabel 1500 1200 0    75   BiDi ~ 0
 PA[0..15]
-Text HLabel 1700 3200 0    75   BiDi ~ 0
+Text HLabel 1500 1400 0    75   BiDi ~ 0
 PB[0..15]
-Text HLabel 1700 3400 0    75   BiDi ~ 0
+Text HLabel 1500 1600 0    75   BiDi ~ 0
 PC[0..15]
-Text HLabel 1700 3600 0    75   BiDi ~ 0
+Text HLabel 1500 1800 0    75   BiDi ~ 0
 PF[0..1]
-Text HLabel 1700 3800 0    75   BiDi ~ 0
+Text HLabel 1500 2000 0    75   BiDi ~ 0
 PF[4..7]
 Wire Wire Line
 	6175 5200 6275 5200
@@ -191,91 +191,91 @@ Connection ~ 4400 2400
 $Comp
 L Device:Crystal_Small Y?
 U 1 1 61D4BE60
-P 1500 6300
+P 2050 6000
 AR Path="/6176B826/61D4BE60" Ref="Y?"  Part="1" 
 AR Path="/6176B761/61D4BE60" Ref="Y?"  Part="1" 
-F 0 "Y?" H 1500 6525 50  0000 C CNN
-F 1 "Crystal_Small" H 1500 6434 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm_HandSoldering" H 1500 6300 50  0001 C CNN
-F 3 "~" H 1500 6300 50  0001 C CNN
-	1    1500 6300
+F 0 "Y?" H 2050 6225 50  0000 C CNN
+F 1 "Crystal_Small" H 2050 6134 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM3B-4Pin_5.0x3.2mm" H 2050 6000 50  0001 C CNN
+F 3 "~" H 2050 6000 50  0001 C CNN
+	1    2050 6000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 61D4BE67
-P 1200 6600
+P 1750 6300
 AR Path="/6176B826/61D4BE67" Ref="C?"  Part="1" 
 AR Path="/6176B761/61D4BE67" Ref="C?"  Part="1" 
-F 0 "C?" H 1292 6646 50  0000 L CNN
-F 1 "C_Small" H 1292 6555 50  0000 L CNN
-F 2 "" H 1200 6600 50  0001 C CNN
-F 3 "~" H 1200 6600 50  0001 C CNN
-	1    1200 6600
+F 0 "C?" H 1842 6346 50  0000 L CNN
+F 1 "C_Small" H 1842 6255 50  0000 L CNN
+F 2 "" H 1750 6300 50  0001 C CNN
+F 3 "~" H 1750 6300 50  0001 C CNN
+	1    1750 6300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 61D4BE6D
-P 1800 6600
+P 2350 6300
 AR Path="/6176B826/61D4BE6D" Ref="C?"  Part="1" 
 AR Path="/6176B761/61D4BE6D" Ref="C?"  Part="1" 
-F 0 "C?" H 1892 6646 50  0000 L CNN
-F 1 "C_Small" H 1892 6555 50  0000 L CNN
-F 2 "" H 1800 6600 50  0001 C CNN
-F 3 "~" H 1800 6600 50  0001 C CNN
-	1    1800 6600
+F 0 "C?" H 2442 6346 50  0000 L CNN
+F 1 "C_Small" H 2442 6255 50  0000 L CNN
+F 2 "" H 2350 6300 50  0001 C CNN
+F 3 "~" H 2350 6300 50  0001 C CNN
+	1    2350 6300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:Earth #PWR?
 U 1 1 61D4BE73
-P 1200 6800
+P 1750 6500
 AR Path="/6176B826/61D4BE73" Ref="#PWR?"  Part="1" 
 AR Path="/6176B761/61D4BE73" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1200 6550 50  0001 C CNN
-F 1 "Earth" H 1200 6650 50  0001 C CNN
-F 2 "" H 1200 6800 50  0001 C CNN
-F 3 "~" H 1200 6800 50  0001 C CNN
-	1    1200 6800
+F 0 "#PWR?" H 1750 6250 50  0001 C CNN
+F 1 "Earth" H 1750 6350 50  0001 C CNN
+F 2 "" H 1750 6500 50  0001 C CNN
+F 3 "~" H 1750 6500 50  0001 C CNN
+	1    1750 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:Earth #PWR?
 U 1 1 61D4BE79
-P 1800 6800
+P 2350 6500
 AR Path="/6176B826/61D4BE79" Ref="#PWR?"  Part="1" 
 AR Path="/6176B761/61D4BE79" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1800 6550 50  0001 C CNN
-F 1 "Earth" H 1800 6650 50  0001 C CNN
-F 2 "" H 1800 6800 50  0001 C CNN
-F 3 "~" H 1800 6800 50  0001 C CNN
-	1    1800 6800
+F 0 "#PWR?" H 2350 6250 50  0001 C CNN
+F 1 "Earth" H 2350 6350 50  0001 C CNN
+F 2 "" H 2350 6500 50  0001 C CNN
+F 3 "~" H 2350 6500 50  0001 C CNN
+	1    2350 6500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 6700 1200 6800
+	1750 6400 1750 6500
 Wire Wire Line
-	1800 6700 1800 6800
+	2350 6400 2350 6500
 Wire Wire Line
-	1400 6300 1200 6300
+	1950 6000 1750 6000
 Wire Wire Line
-	1200 6300 1200 6500
+	1750 6000 1750 6200
 Wire Wire Line
-	1600 6300 1800 6300
+	2150 6000 2350 6000
 Wire Wire Line
-	1800 6300 1800 6500
+	2350 6000 2350 6200
 Wire Wire Line
-	1200 6300 1200 5800
+	1750 6000 1750 5500
 Wire Wire Line
-	1200 5800 2000 5800
-Connection ~ 1200 6300
+	1750 5500 2550 5500
+Connection ~ 1750 6000
 Wire Wire Line
-	1800 6300 1800 5900
+	2350 6000 2350 5600
 Wire Wire Line
-	1800 5900 2000 5900
-Connection ~ 1800 6300
-Text Label 2000 5800 0    50   ~ 0
+	2350 5600 2550 5600
+Connection ~ 2350 6000
+Text Label 2550 5500 0    50   ~ 0
 OSC_IN
 Text Label 4600 3700 2    50   ~ 0
 OSC_IN
@@ -296,6 +296,127 @@ Wire Wire Line
 	4775 3800 4600 3800
 Text Label 4600 3800 2    50   ~ 0
 OSC_OUT
-Text Label 2000 5900 0    50   ~ 0
+Text Label 2550 5600 0    50   ~ 0
 OSC_OUT
+Wire Wire Line
+	4775 5400 4675 5400
+Wire Wire Line
+	4775 5500 4675 5500
+Wire Wire Line
+	4775 5600 4675 5600
+Text Label 4675 5400 2    50   ~ 0
+LED1
+Text Label 4675 5500 2    50   ~ 0
+LED2
+Text Label 4675 5600 2    50   ~ 0
+LED3
+Text Label 2750 3725 0    50   ~ 0
+LED1
+Text Label 2750 3975 0    50   ~ 0
+LED2
+Text Label 2750 4225 0    50   ~ 0
+LED3
+$Comp
+L power:Earth #PWR?
+U 1 1 61D4FCF2
+P 1750 4475
+F 0 "#PWR?" H 1750 4225 50  0001 C CNN
+F 1 "Earth" H 1750 4325 50  0001 C CNN
+F 2 "" H 1750 4475 50  0001 C CNN
+F 3 "~" H 1750 4475 50  0001 C CNN
+	1    1750 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 61D516FC
+P 2400 3725
+F 0 "D?" H 2400 3960 50  0000 C CNN
+F 1 "LED_Small" H 2400 3869 50  0000 C CNN
+F 2 "" V 2400 3725 50  0001 C CNN
+F 3 "~" V 2400 3725 50  0001 C CNN
+	1    2400 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 61D52243
+P 2400 3975
+F 0 "D?" H 2400 4210 50  0000 C CNN
+F 1 "LED_Small" H 2400 4119 50  0000 C CNN
+F 2 "" V 2400 3975 50  0001 C CNN
+F 3 "~" V 2400 3975 50  0001 C CNN
+	1    2400 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 61D525E2
+P 2400 4225
+F 0 "D?" H 2400 4460 50  0000 C CNN
+F 1 "LED_Small" H 2400 4369 50  0000 C CNN
+F 2 "" V 2400 4225 50  0001 C CNN
+F 3 "~" V 2400 4225 50  0001 C CNN
+	1    2400 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4225 2750 4225
+Wire Wire Line
+	2500 3975 2750 3975
+Wire Wire Line
+	2500 3725 2750 3725
+$Comp
+L Device:R_Small R?
+U 1 1 61D57F68
+P 2100 3725
+F 0 "R?" V 1904 3725 50  0000 C CNN
+F 1 "R_Small" V 1995 3725 50  0000 C CNN
+F 2 "" H 2100 3725 50  0001 C CNN
+F 3 "~" H 2100 3725 50  0001 C CNN
+	1    2100 3725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 3725 2300 3725
+$Comp
+L Device:R_Small R?
+U 1 1 61D59E4A
+P 2100 3975
+F 0 "R?" V 1904 3975 50  0000 C CNN
+F 1 "R_Small" V 1995 3975 50  0000 C CNN
+F 2 "" H 2100 3975 50  0001 C CNN
+F 3 "~" H 2100 3975 50  0001 C CNN
+	1    2100 3975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61D5A67A
+P 2100 4225
+F 0 "R?" V 1904 4225 50  0000 C CNN
+F 1 "R_Small" V 1995 4225 50  0000 C CNN
+F 2 "" H 2100 4225 50  0001 C CNN
+F 3 "~" H 2100 4225 50  0001 C CNN
+	1    2100 4225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 4225 2300 4225
+Wire Wire Line
+	2200 3975 2300 3975
+Wire Wire Line
+	1750 4475 1750 4225
+Wire Wire Line
+	1750 4225 2000 4225
+Wire Wire Line
+	2000 3725 1750 3725
+Wire Wire Line
+	1750 3725 1750 3975
+Connection ~ 1750 4225
+Wire Wire Line
+	2000 3975 1750 3975
+Connection ~ 1750 3975
+Wire Wire Line
+	1750 3975 1750 4225
 $EndSCHEMATC
