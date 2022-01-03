@@ -33,7 +33,7 @@ Text HLabel 6275 2500 2    75   Input ~ 0
 RMII_REF_CLK
 Text HLabel 8500 5300 0    75   UnSpc ~ 0
 GND
-Text HLabel 1700 5300 0    75   UnSpc ~ 0
+Text HLabel 4300 2400 0    75   UnSpc ~ 0
 NRST
 Text HLabel 1700 3000 0    75   BiDi ~ 0
 PA[0..15]
@@ -119,46 +119,42 @@ Connection ~ 5275 2100
 $Comp
 L Device:C_Small C?
 U 1 1 61D7B19B
-P 4400 2200
-F 0 "C?" H 4492 2246 50  0000 L CNN
-F 1 "C_Small" H 4492 2155 50  0000 L CNN
-F 2 "" H 4400 2200 50  0001 C CNN
-F 3 "~" H 4400 2200 50  0001 C CNN
-	1    4400 2200
-	1    0    0    -1  
+P 4400 2600
+F 0 "C?" H 4492 2646 50  0000 L CNN
+F 1 "C_Small" H 4492 2555 50  0000 L CNN
+F 2 "" H 4400 2600 50  0001 C CNN
+F 3 "~" H 4400 2600 50  0001 C CNN
+	1    4400 2600
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4400 2300 4400 2400
+	4400 2500 4400 2400
 Wire Wire Line
 	4400 2400 4775 2400
 $Comp
 L power:Earth #PWR?
 U 1 1 61D7EBFD
-P 4400 2000
-F 0 "#PWR?" H 4400 1750 50  0001 C CNN
-F 1 "Earth" H 4400 1850 50  0001 C CNN
-F 2 "" H 4400 2000 50  0001 C CNN
-F 3 "~" H 4400 2000 50  0001 C CNN
-	1    4400 2000
-	-1   0    0    1   
+P 4400 2800
+F 0 "#PWR?" H 4400 2550 50  0001 C CNN
+F 1 "Earth" H 4400 2650 50  0001 C CNN
+F 2 "" H 4400 2800 50  0001 C CNN
+F 3 "~" H 4400 2800 50  0001 C CNN
+	1    4400 2800
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 2000 4400 2100
+	4400 2800 4400 2700
 $Comp
 L power:Earth #PWR?
 U 1 1 61D80386
-P 4200 2000
-F 0 "#PWR?" H 4200 1750 50  0001 C CNN
-F 1 "Earth" H 4200 1850 50  0001 C CNN
-F 2 "" H 4200 2000 50  0001 C CNN
-F 3 "~" H 4200 2000 50  0001 C CNN
-	1    4200 2000
-	-1   0    0    1   
+P 4675 2700
+F 0 "#PWR?" H 4675 2450 50  0001 C CNN
+F 1 "Earth" H 4675 2550 50  0001 C CNN
+F 2 "" H 4675 2700 50  0001 C CNN
+F 3 "~" H 4675 2700 50  0001 C CNN
+	1    4675 2700
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4200 2000 4200 2600
-Wire Wire Line
-	4200 2600 4775 2600
 Wire Wire Line
 	5275 5800 5275 5900
 Wire Wire Line
@@ -196,4 +192,11 @@ F 3 "~" H 5775 6000 50  0001 C CNN
 	1    5775 6000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4675 2600 4775 2600
+Wire Wire Line
+	4675 2600 4675 2700
+Wire Wire Line
+	4300 2400 4400 2400
+Connection ~ 4400 2400
 $EndSCHEMATC

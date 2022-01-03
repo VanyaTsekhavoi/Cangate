@@ -45,17 +45,6 @@ Text HLabel 1700 3600 0    75   BiDi ~ 0
 PF[0..1]
 Text HLabel 1700 3800 0    75   BiDi ~ 0
 PF[4..7]
-$Comp
-L MCU_ST_STM32F1:STM32F107RCTx U?
-U 1 1 61D5A186
-P 5475 4000
-F 0 "U?" H 4900 2125 50  0000 C CNN
-F 1 "STM32F107RCTx" H 5150 2025 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 4875 2300 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00220364.pdf" H 5475 4000 50  0001 C CNN
-	1    5475 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6175 5200 6275 5200
 Wire Wire Line
@@ -199,4 +188,114 @@ Wire Wire Line
 Wire Wire Line
 	4300 2400 4400 2400
 Connection ~ 4400 2400
+$Comp
+L Device:Crystal_Small Y?
+U 1 1 61D4BE60
+P 1500 6300
+AR Path="/6176B826/61D4BE60" Ref="Y?"  Part="1" 
+AR Path="/6176B761/61D4BE60" Ref="Y?"  Part="1" 
+F 0 "Y?" H 1500 6525 50  0000 C CNN
+F 1 "Crystal_Small" H 1500 6434 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm_HandSoldering" H 1500 6300 50  0001 C CNN
+F 3 "~" H 1500 6300 50  0001 C CNN
+	1    1500 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61D4BE67
+P 1200 6600
+AR Path="/6176B826/61D4BE67" Ref="C?"  Part="1" 
+AR Path="/6176B761/61D4BE67" Ref="C?"  Part="1" 
+F 0 "C?" H 1292 6646 50  0000 L CNN
+F 1 "C_Small" H 1292 6555 50  0000 L CNN
+F 2 "" H 1200 6600 50  0001 C CNN
+F 3 "~" H 1200 6600 50  0001 C CNN
+	1    1200 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61D4BE6D
+P 1800 6600
+AR Path="/6176B826/61D4BE6D" Ref="C?"  Part="1" 
+AR Path="/6176B761/61D4BE6D" Ref="C?"  Part="1" 
+F 0 "C?" H 1892 6646 50  0000 L CNN
+F 1 "C_Small" H 1892 6555 50  0000 L CNN
+F 2 "" H 1800 6600 50  0001 C CNN
+F 3 "~" H 1800 6600 50  0001 C CNN
+	1    1800 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 61D4BE73
+P 1200 6800
+AR Path="/6176B826/61D4BE73" Ref="#PWR?"  Part="1" 
+AR Path="/6176B761/61D4BE73" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1200 6550 50  0001 C CNN
+F 1 "Earth" H 1200 6650 50  0001 C CNN
+F 2 "" H 1200 6800 50  0001 C CNN
+F 3 "~" H 1200 6800 50  0001 C CNN
+	1    1200 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 61D4BE79
+P 1800 6800
+AR Path="/6176B826/61D4BE79" Ref="#PWR?"  Part="1" 
+AR Path="/6176B761/61D4BE79" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1800 6550 50  0001 C CNN
+F 1 "Earth" H 1800 6650 50  0001 C CNN
+F 2 "" H 1800 6800 50  0001 C CNN
+F 3 "~" H 1800 6800 50  0001 C CNN
+	1    1800 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 6700 1200 6800
+Wire Wire Line
+	1800 6700 1800 6800
+Wire Wire Line
+	1400 6300 1200 6300
+Wire Wire Line
+	1200 6300 1200 6500
+Wire Wire Line
+	1600 6300 1800 6300
+Wire Wire Line
+	1800 6300 1800 6500
+Wire Wire Line
+	1200 6300 1200 5800
+Wire Wire Line
+	1200 5800 2000 5800
+Connection ~ 1200 6300
+Wire Wire Line
+	1800 6300 1800 5900
+Wire Wire Line
+	1800 5900 2000 5900
+Connection ~ 1800 6300
+Text Label 2000 5800 0    50   ~ 0
+OSC_IN
+Text Label 4600 3700 2    50   ~ 0
+OSC_IN
+Wire Wire Line
+	4600 3700 4775 3700
+$Comp
+L MCU_ST_STM32F1:STM32F107RCTx U?
+U 1 1 61D5A186
+P 5475 4000
+F 0 "U?" H 4900 2125 50  0000 C CNN
+F 1 "STM32F107RCTx" H 5150 2025 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 4875 2300 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00220364.pdf" H 5475 4000 50  0001 C CNN
+	1    5475 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4775 3800 4600 3800
+Text Label 4600 3800 2    50   ~ 0
+OSC_OUT
+Text Label 2000 5900 0    50   ~ 0
+OSC_OUT
 $EndSCHEMATC
