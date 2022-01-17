@@ -762,4 +762,180 @@ Wire Wire Line
 Connection ~ 7150 2050
 Wire Wire Line
 	7150 2050 7150 2150
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J?
+U 1 1 61E3A5F4
+P 9650 4750
+F 0 "J?" H 9206 4704 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 9206 4795 50  0000 R CNN
+F 2 "" H 9650 4750 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 9300 3500 50  0001 C CNN
+	1    9650 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61E4B09B
+P 8750 4000
+F 0 "#PWR?" H 8750 3850 50  0001 C CNN
+F 1 "+3V3" H 8765 4173 50  0000 C CNN
+F 2 "" H 8750 4000 50  0001 C CNN
+F 3 "" H 8750 4000 50  0001 C CNN
+	1    8750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8975 4650 9150 4650
+$Comp
+L Device:R_Small R?
+U 1 1 61E51799
+P 8875 4650
+F 0 "R?" V 8679 4650 50  0000 C CNN
+F 1 "R_Small" V 8770 4650 50  0000 C CNN
+F 2 "" H 8875 4650 50  0001 C CNN
+F 3 "~" H 8875 4650 50  0001 C CNN
+	1    8875 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9150 4750 8750 4750
+Wire Wire Line
+	9150 4850 8500 4850
+$Comp
+L Device:R_Small R?
+U 1 1 61E5C0B5
+P 8650 4750
+F 0 "R?" V 8454 4750 50  0000 C CNN
+F 1 "R_Small" V 8545 4750 50  0000 C CNN
+F 2 "" H 8650 4750 50  0001 C CNN
+F 3 "~" H 8650 4750 50  0001 C CNN
+	1    8650 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61E5C7BA
+P 8400 4850
+F 0 "R?" V 8204 4850 50  0000 C CNN
+F 1 "R_Small" V 8295 4850 50  0000 C CNN
+F 2 "" H 8400 4850 50  0001 C CNN
+F 3 "~" H 8400 4850 50  0001 C CNN
+	1    8400 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61E5E40F
+P 9750 2800
+F 0 "#PWR?" H 9750 2650 50  0001 C CNN
+F 1 "+3V3" H 9765 2973 50  0000 C CNN
+F 2 "" H 9750 2800 50  0001 C CNN
+F 3 "" H 9750 2800 50  0001 C CNN
+	1    9750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 61E60ACE
+P 9000 3400
+F 0 "#PWR?" H 9000 3150 50  0001 C CNN
+F 1 "Earth" H 9000 3250 50  0001 C CNN
+F 2 "" H 9000 3400 50  0001 C CNN
+F 3 "~" H 9000 3400 50  0001 C CNN
+	1    9000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61E61CB9
+P 9500 3100
+F 0 "C?" H 9592 3146 50  0000 L CNN
+F 1 "C_Small" H 9592 3055 50  0000 L CNN
+F 2 "" H 9500 3100 50  0001 C CNN
+F 3 "~" H 9500 3100 50  0001 C CNN
+	1    9500 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61E64D96
+P 9000 3100
+F 0 "C?" H 9092 3146 50  0000 L CNN
+F 1 "C_Small" H 9092 3055 50  0000 L CNN
+F 2 "" H 9000 3100 50  0001 C CNN
+F 3 "~" H 9000 3100 50  0001 C CNN
+	1    9000 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61E667D6
+P 9250 3100
+F 0 "C?" H 9342 3146 50  0000 L CNN
+F 1 "C_Small" H 9342 3055 50  0000 L CNN
+F 2 "" H 9250 3100 50  0001 C CNN
+F 3 "~" H 9250 3100 50  0001 C CNN
+	1    9250 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61E66B17
+P 9750 3100
+F 0 "C?" H 9842 3146 50  0000 L CNN
+F 1 "C_Small" H 9842 3055 50  0000 L CNN
+F 2 "" H 9750 3100 50  0001 C CNN
+F 3 "~" H 9750 3100 50  0001 C CNN
+	1    9750 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9000 3000 9000 2900
+Wire Wire Line
+	9000 2900 9250 2900
+Wire Wire Line
+	9250 2900 9250 3000
+Wire Wire Line
+	9250 2900 9500 2900
+Wire Wire Line
+	9500 2900 9500 3000
+Connection ~ 9250 2900
+Wire Wire Line
+	9750 3000 9750 2900
+Wire Wire Line
+	9750 2900 9500 2900
+Connection ~ 9500 2900
+Wire Wire Line
+	9500 3200 9500 3300
+Wire Wire Line
+	9500 3300 9750 3300
+Wire Wire Line
+	9750 3300 9750 3200
+Wire Wire Line
+	9500 3300 9250 3300
+Wire Wire Line
+	9250 3300 9250 3200
+Connection ~ 9500 3300
+Wire Wire Line
+	9000 3200 9000 3300
+Wire Wire Line
+	9000 3300 9250 3300
+Connection ~ 9250 3300
+Wire Wire Line
+	9000 3300 9000 3400
+Connection ~ 9000 3300
+Wire Wire Line
+	9750 2800 9750 2900
+Connection ~ 9750 2900
+$Comp
+L power:Earth #PWR?
+U 1 1 61E4A6B2
+P 9675 3900
+F 0 "#PWR?" H 9675 3650 50  0001 C CNN
+F 1 "Earth" H 9675 3750 50  0001 C CNN
+F 2 "" H 9675 3900 50  0001 C CNN
+F 3 "~" H 9675 3900 50  0001 C CNN
+	1    9675 3900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
