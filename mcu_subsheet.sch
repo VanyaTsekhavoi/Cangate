@@ -33,7 +33,7 @@ Text HLabel 6200 3050 2    75   Input ~ 0
 RMII_REF_CLK
 Text HLabel 2000 2500 0    75   UnSpc ~ 0
 GND
-Text HLabel 4225 2950 0    75   UnSpc ~ 0
+Text HLabel 4250 2950 0    75   UnSpc ~ 0
 NRST
 Text HLabel 1500 1200 0    75   BiDi ~ 0
 PA[0..15]
@@ -108,31 +108,27 @@ Connection ~ 5200 2650
 $Comp
 L Device:C_Small C?
 U 1 1 61D7B19B
-P 4325 3150
-F 0 "C?" H 4417 3196 50  0000 L CNN
-F 1 "C_Small" H 4417 3105 50  0000 L CNN
-F 2 "" H 4325 3150 50  0001 C CNN
-F 3 "~" H 4325 3150 50  0001 C CNN
-	1    4325 3150
+P 4350 3150
+F 0 "C?" H 4442 3196 50  0000 L CNN
+F 1 "C_Small" H 4442 3105 50  0000 L CNN
+F 2 "" H 4350 3150 50  0001 C CNN
+F 3 "~" H 4350 3150 50  0001 C CNN
+	1    4350 3150
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4325 3050 4325 2950
-Wire Wire Line
-	4325 2950 4700 2950
 $Comp
 L power:Earth #PWR?
 U 1 1 61D7EBFD
-P 4325 3350
-F 0 "#PWR?" H 4325 3100 50  0001 C CNN
-F 1 "Earth" H 4325 3200 50  0001 C CNN
-F 2 "" H 4325 3350 50  0001 C CNN
-F 3 "~" H 4325 3350 50  0001 C CNN
-	1    4325 3350
+P 4350 3350
+F 0 "#PWR?" H 4350 3100 50  0001 C CNN
+F 1 "Earth" H 4350 3200 50  0001 C CNN
+F 2 "" H 4350 3350 50  0001 C CNN
+F 3 "~" H 4350 3350 50  0001 C CNN
+	1    4350 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4325 3350 4325 3250
+	4350 3350 4350 3250
 $Comp
 L power:Earth #PWR?
 U 1 1 61D80386
@@ -185,9 +181,6 @@ Wire Wire Line
 	4600 3150 4700 3150
 Wire Wire Line
 	4600 3150 4600 3250
-Wire Wire Line
-	4225 2950 4325 2950
-Connection ~ 4325 2950
 $Comp
 L Device:Crystal_Small Y?
 U 1 1 61D4BE60
@@ -663,28 +656,6 @@ F 3 "https://static.chipdip.ru/lib/911/DOC011911353.pdf" H 7950 1550 50  0001 C 
 	1    7950 1550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:D_Small D?
-U 1 1 61E0E1EA
-P 9750 1350
-F 0 "D?" V 9704 1420 50  0000 L CNN
-F 1 "D_Small" V 9795 1420 50  0000 L CNN
-F 2 "" V 9750 1350 50  0001 C CNN
-F 3 "~" V 9750 1350 50  0001 C CNN
-	1    9750 1350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D_Small D?
-U 1 1 61E0EA92
-P 9750 1650
-F 0 "D?" V 9796 1580 50  0000 R CNN
-F 1 "D_Small" V 9705 1580 50  0000 R CNN
-F 2 "" V 9750 1650 50  0001 C CNN
-F 3 "~" V 9750 1650 50  0001 C CNN
-	1    9750 1650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	9250 1250 9250 1150
 Wire Wire Line
@@ -696,46 +667,25 @@ Wire Wire Line
 Connection ~ 8500 1150
 Wire Wire Line
 	8500 1150 8250 1150
-Wire Wire Line
-	9750 1250 9750 1150
 Connection ~ 9250 1150
-Wire Wire Line
-	9750 1750 9750 1850
 Connection ~ 9250 1850
 $Comp
 L power:Earth #PWR?
 U 1 1 61E219F8
-P 9500 2250
-F 0 "#PWR?" H 9500 2000 50  0001 C CNN
-F 1 "Earth" H 9500 2100 50  0001 C CNN
-F 2 "" H 9500 2250 50  0001 C CNN
-F 3 "~" H 9500 2250 50  0001 C CNN
-	1    9500 2250
+P 10250 2050
+F 0 "#PWR?" H 10250 1800 50  0001 C CNN
+F 1 "Earth" H 10250 1900 50  0001 C CNN
+F 2 "" H 10250 2050 50  0001 C CNN
+F 3 "~" H 10250 2050 50  0001 C CNN
+	1    10250 2050
 	1    0    0    -1  
 $EndComp
-Text GLabel 10000 1150 2    50   Input ~ 0
+Text GLabel 10250 1150 2    50   Input ~ 0
 CAN_H
-Text GLabel 10000 1850 2    50   Input ~ 0
+Text GLabel 10500 1850 2    50   Input ~ 0
 CAN_L
 Wire Wire Line
-	10000 1150 9750 1150
-Wire Wire Line
-	10000 1850 9750 1850
-Wire Wire Line
-	9750 1450 9750 1500
-Connection ~ 9750 1150
-Connection ~ 9750 1850
-Wire Wire Line
-	9250 1150 9750 1150
-Wire Wire Line
-	9250 1850 9750 1850
-Wire Wire Line
-	9750 1500 9500 1500
-Wire Wire Line
-	9500 1500 9500 2250
-Connection ~ 9750 1500
-Wire Wire Line
-	9750 1500 9750 1550
+	9250 1150 9500 1150
 Wire Wire Line
 	2000 2500 2250 2500
 Wire Wire Line
@@ -1059,4 +1009,69 @@ Wire Wire Line
 	8950 5000 9400 5000
 Wire Wire Line
 	8650 4900 9400 4900
+$Comp
+L dk_TVS-Diodes:PESD1CAN_215 D?
+U 1 1 61EEEF3D
+P 9900 1500
+F 0 "D?" H 9900 1887 60  0000 C CNN
+F 1 "PESD1CAN_215" H 9900 1781 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 10100 1700 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESD1CAN.pdf" H 10100 1800 60  0001 L CNN
+F 4 "1727-3817-1-ND" H 10100 1900 60  0001 L CNN "Digi-Key_PN"
+F 5 "PESD1CAN,215" H 10100 2000 60  0001 L CNN "MPN"
+F 6 "Circuit Protection" H 10100 2100 60  0001 L CNN "Category"
+F 7 "TVS - Diodes" H 10100 2200 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/PESD1CAN.pdf" H 10100 2300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/PESD1CAN,215/1727-3817-1-ND/1530822" H 10100 2400 60  0001 L CNN "DK_Detail_Page"
+F 10 "TVS DIODE 24V 70V SOT23" H 10100 2500 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 10100 2600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10100 2700 60  0001 L CNN "Status"
+	1    9900 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1400 9500 1400
+Wire Wire Line
+	9500 1400 9500 1150
+Connection ~ 9500 1150
+Wire Wire Line
+	9500 1150 10250 1150
+Wire Wire Line
+	9250 1850 9500 1850
+Wire Wire Line
+	9600 1600 9500 1600
+Wire Wire Line
+	9500 1600 9500 1850
+Wire Wire Line
+	10200 1500 10250 1500
+Wire Wire Line
+	10250 1500 10250 2050
+Wire Wire Line
+	9500 1850 10500 1850
+Connection ~ 9500 1850
+Wire Wire Line
+	6100 4250 6200 4250
+Text Label 6200 4250 0    50   ~ 0
+SWDIO
+Text Label 6200 4350 0    50   ~ 0
+SWDCLK
+Wire Wire Line
+	6200 4350 6100 4350
+Text Label 4250 2750 2    50   ~ 0
+nSRST
+Wire Wire Line
+	4350 2750 4350 2950
+Wire Wire Line
+	4250 2750 4350 2750
+Wire Wire Line
+	4250 2950 4350 2950
+Wire Wire Line
+	4350 2950 4700 2950
+Connection ~ 4350 2950
+Wire Wire Line
+	4350 2950 4350 3050
+Text Label 6200 4950 0    50   ~ 0
+SWO
+Wire Wire Line
+	6200 4950 6100 4950
 $EndSCHEMATC

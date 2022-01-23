@@ -129,28 +129,6 @@ X 2 2 100 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_D_Small
-#
-DEF Device_D_Small D 0 10 N N 1 F N
-F0 "D" -50 80 50 H V L CNN
-F1 "Device_D_Small" -150 -80 50 H V L CNN
-F2 "" 0 0 50 V I C CNN
-F3 "" 0 0 50 V I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 10 -30 -40 -30 40 N
-P 2 0 1 0 -30 0 30 0 N
-P 4 0 1 10 30 -40 -30 0 30 40 30 -40 N
-X K 1 -100 0 70 R 50 50 1 1 P
-X A 2 100 0 70 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_Ferrite_Bead_Small
 #
 DEF Device_Ferrite_Bead_Small FB 0 0 N Y 1 F N
@@ -350,6 +328,54 @@ X VDD 64 200 1800 100 D 50 50 1 1 W
 X NRST 7 -700 1600 100 R 50 50 1 1 I
 X PC0 8 -700 -100 100 R 50 50 1 1 B
 X PC1 9 -700 -200 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# dk_TVS-Diodes_PESD1CAN_215
+#
+DEF dk_TVS-Diodes_PESD1CAN_215 D 0 0 Y Y 1 F N
+F0 "D" -200 240 60 H V L CNN
+F1 "dk_TVS-Diodes_PESD1CAN_215" 0 -250 60 H V C CNN
+F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
+F3 "https://assets.nexperia.com/documents/data-sheet/PESD1CAN.pdf" 200 300 60 H I L CNN
+F4 "1727-3817-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "PESD1CAN,215" 200 500 60 H I L CNN "MPN"
+F6 "Circuit Protection" 200 600 60 H I L CNN "Category"
+F7 "TVS - Diodes" 200 700 60 H I L CNN "Family"
+F8 "https://assets.nexperia.com/documents/data-sheet/PESD1CAN.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/nexperia-usa-inc/PESD1CAN,215/1727-3817-1-ND/1530822" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TVS DIODE 24V 70V SOT23" 200 1000 60 H I L CNN "Description"
+F11 "Nexperia USA Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 150 0 7 0 1 0 F
+S -200 200 200 -200 0 1 0 f
+P 2 0 1 0 -200 -100 -150 -100 N
+P 2 0 1 0 -200 100 -150 100 N
+P 2 0 1 0 -150 -150 -125 -150 N
+P 2 0 1 0 -150 -50 -175 -50 N
+P 2 0 1 0 -150 -50 -150 -150 N
+P 2 0 1 0 -150 50 -125 50 N
+P 2 0 1 0 -150 150 -175 150 N
+P 2 0 1 0 -150 150 -150 50 N
+P 2 0 1 0 25 -100 -75 -100 N
+P 2 0 1 0 25 100 -75 100 N
+P 2 0 1 0 25 100 25 100 N
+P 2 0 1 0 100 -150 125 -150 N
+P 2 0 1 0 100 -50 75 -50 N
+P 2 0 1 0 100 -50 100 -150 N
+P 2 0 1 0 100 50 125 50 N
+P 2 0 1 0 100 150 75 150 N
+P 2 0 1 0 100 150 100 50 N
+P 2 0 1 0 150 0 200 0 N
+P 4 0 1 0 -75 -50 -75 -150 -150 -100 -75 -50 F
+P 4 0 1 0 -75 50 -75 150 -150 100 -75 50 F
+P 4 0 1 0 25 -50 25 -150 100 -100 25 -50 F
+P 4 0 1 0 25 150 25 50 100 100 25 150 F
+P 4 0 1 0 100 100 150 100 150 -100 100 -100 N
+X C1 1 -300 100 100 R 50 50 1 1 P
+X C2 2 -300 -100 100 R 50 50 1 1 P
+X C3 3 300 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
