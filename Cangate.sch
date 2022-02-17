@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "Cangate"
 Date "2021-10-24"
 Rev "v01"
@@ -82,4 +82,10 @@ Wire Wire Line
 	2500 5000 2500 4600
 Wire Wire Line
 	2500 4600 2680 4600
+$Sheet
+S 2500 1500 750  500 
+U 62087D00
+F0 "usb_subsheet" 50
+F1 "usb_subsheet.sch" 50
+$EndSheet
 $EndSCHEMATC

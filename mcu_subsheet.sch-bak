@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -1060,14 +1060,18 @@ Wire Wire Line
 Text Label 4250 2750 2    50   ~ 0
 nSRST
 Wire Wire Line
-	4250 2950 4350 2950
-Wire Wire Line
 	4350 2750 4350 2950
 Wire Wire Line
 	4250 2750 4350 2750
-Connection ~ 4350 2950
+Wire Wire Line
+	4250 2950 4350 2950
 Wire Wire Line
 	4350 2950 4700 2950
+Connection ~ 4350 2950
 Wire Wire Line
 	4350 2950 4350 3050
+Text Label 6200 4950 0    50   ~ 0
+SWO
+Wire Wire Line
+	6200 4950 6100 4950
 $EndSCHEMATC
