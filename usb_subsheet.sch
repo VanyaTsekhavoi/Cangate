@@ -102,20 +102,6 @@ Wire Wire Line
 Wire Wire Line
 	3750 4450 3500 4450
 Connection ~ 3500 4450
-$Comp
-L power:Earth #PWR?
-U 1 1 620DE109
-P 2650 4500
-F 0 "#PWR?" H 2650 4250 50  0001 C CNN
-F 1 "Earth" H 2650 4350 50  0001 C CNN
-F 2 "" H 2650 4500 50  0001 C CNN
-F 3 "~" H 2650 4500 50  0001 C CNN
-	1    2650 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 4450 2650 4500
-Connection ~ 2650 4450
 Connection ~ 3350 3350
 Connection ~ 3350 3650
 NoConn ~ 3350 3950
